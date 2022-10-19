@@ -8,38 +8,41 @@
     <title>Vanilla</title>
 
     <!--& CSS -->
-    <link rel="stylesheet" href="./sass/style/css/reset.css" />
-    <link rel="stylesheet" href="./sass/style/css/style.css" />
+    <link rel="stylesheet" href="./style/css/reset.css" />
+    <link rel="stylesheet" href="./style/css/style.css" />
 
     <!--& JAVASCRIPT -->
     <script src="./script/index.js" defer type="module"></script>
   </head>
   <body>
-    <header id="header">
-        
-    </header>
+    <header id="header"></header>
 
     <main class="container">
-        
-        <section class="main-buttons">
-          <button type="button" class="main-buttons__button main-buttons__button--start">START</button>
-          <button type="button" class="main-buttons__button main-buttons__button--reset">RESET</button>
-        </section>
+      <!--& ACTION BUTTONS -->
+      <section class="main-buttons">
+        <button type="button" class="main-buttons__button main-buttons__button--start">START</button>
+        <button type="button" class="main-buttons__button main-buttons__button--reset">RESET</button>
+      </section>
 
-        <section class="current-timer">
-          <button type="button" class="current-timer__button--less"> -5</button>
-          <div class="current-timer__title">TIMER</div>
-          <button type="button" class="current-timer__button--more">+5</button>
-        </section>
-        
-        <section class="define-timer">
-            <button type="button" class="define-timer__button--less"> -5</button>
-            <div class="define-timer__title">REST</div>
-            <button type="button" class="define-timer__button--more">+5</button>            
-        </section>
-        
-        <section class="container__session-title">WORK</section>
-  
+      <!--& DISPLAY TIMER -->
+      <section class="timer current-timer">
+        <button type="button" class="current-timer__button current-timer__button--less">-5</button>
+        <div class="current-timer__container">
+          <p class="current-timer__minutes">30</p>
+          <span> : </span>
+          <p class="current-timer__seconds">00</p>
+        </div>
+        <button type="button" class="current-timer__button current-timer__button--more">+5</button>
+      </section>
+
+      <!--& CONFIGURE TIMER -->
+      <section class="timer define-timer">
+        <button type="button" class="define-timer__button define-timer__button--less">-5</button>
+        <div class="define-timer__title">REST</div>
+        <button type="button" class="define-timer__button define-timer__button--more">+5</button>
+      </section>
+
+      <section class="container__session-title">WORK</section>
     </main>
 
     <footer id="footer"></footer>

@@ -2,8 +2,8 @@
 @use './mixins.scss';
 
 body {
-  background-color: vars.$body-color;
-  color: vars.$font-color;
+  background-color: vars.$primary-color;
+  color: vars.$secondary-color;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -12,4 +12,21 @@ body {
 
 a {
   text-decoration: none;
+}
+
+//~ BUTTONS
+.main-buttons,
+.current-timer,
+.define-timer {
+  @include mixins.button;
+}
+
+//~ SECTIONS
+.container {
+  @include mixins.flexbox(center, center, column);
+}
+
+.timer,
+.current-timer__container {
+  @include mixins.flexbox(center, center, row);
 }

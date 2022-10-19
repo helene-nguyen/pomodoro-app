@@ -2,21 +2,31 @@
 
 const app = {
   //~ VARIABLES
+  defaultTimer: {
+    minutes: 30,
+    seconds: 0,
+  },
 
   //* buttons
-  startBtn: document.querySelector('container__button--start'),
-  resetBtn: document.querySelector('container__button--reset'),
+  targetStartBtn: document.querySelector('container__button--start'),
+  targetResetBtn: document.querySelector('container__button--reset'),
+  targetMinutesElement: document.querySelector('current-timer__minutes'),
+  targetSecondsElement: document.querySelector('current-timer__seconds'),
 
   //~ INIT
-  init: () => {},
+  init: () => {
+    console.log('Hello from space 🚀');
+  },
 
   //~ METHODS
   handleListeners: () => {},
-  startTimer: () => {},
-  resetTimer: () => {},
-  breakAction: () => {},
-  handleBtnMore: () => {},
-  handleBtnLess: () => {},
+  handleBtnStartTimer: () => {},
+  handleBtnResetTimer: () => {},
+  handleBtnBreakAction: () => {},
+  handleCurrentTimeBtnMore: () => {},
+  handleCurrentTimeBtnLess: () => {},
+  handleDefinerTimeBtnMore: () => {},
+  handleDefinerTimeBtnLess: () => {},
 };
 
 app.init();
