@@ -27,6 +27,7 @@ a {
 }
 
 .timer,
-.current-timer__container {
+.current-timer__container,
+.define-timer__container {
   @include mixins.flexbox(center, center, row);
 }

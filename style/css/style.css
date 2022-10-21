@@ -38,7 +38,8 @@ a {
 }
 
 .timer,
-.current-timer__container {
+.current-timer__container,
+.define-timer__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
