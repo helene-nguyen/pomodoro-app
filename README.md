@@ -19,6 +19,10 @@ Keywords change Break or Work session => color theme change
 - Display break time + work time 
 - Switch display time when break or work
 
+Todo : 
+
+Refacto everything
+
 ___
 
 Sources :

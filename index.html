@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Vanilla</title>
+    <!--& FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
 
     <!--& CSS -->
     <link rel="stylesheet" href="./style/css/reset.css" />
@@ -18,37 +20,30 @@
     <header id="header"></header>
 
     <main class="container">
+      <section class="container__session-title" data-session="work">WORK</section>
       <!--& ACTION BUTTONS -->
       <section class="main-buttons">
-        <button type="button" class="main-buttons__button main-buttons__button--start">START</button>
+        <button type="button" class="main-buttons__button" data-action="start">START</button>
         <button type="button" class="main-buttons__button main-buttons__button--reset">RESET</button>
       </section>
 
       <!--& DISPLAY TIMER -->
       <section class="timer current-timer">
         <button type="button" class="current-timer__button current-timer__button--less">-5</button>
-        <div class="current-timer__container">
-          <p class="current-timer__minutes"></p>
-          <span> : </span>
-          <p class="current-timer__seconds"></p>
-        </div>
+
+        <div class="current-timer__container"></div>
+
         <button type="button" class="current-timer__button current-timer__button--more">+5</button>
       </section>
 
       <!--& CONFIGURE TIMER -->
       <section class="timer define-timer">
         <button type="button" class="define-timer__button define-timer__button--less">-5</button>
-        <div class="define-timer__time">
-          <div class="define-timer__container">
-            <p class="define-timer__minutes"></p>
-            <span> : </span>
-            <p class="define-timer__seconds"></p>
-          </div>
-        </div>
+
+        <div class="define-timer__container"></div>
+
         <button type="button" class="define-timer__button define-timer__button--more">+5</button>
       </section>
-
-      <section class="container__session-title"></section>
     </main>
 
     <footer id="footer"></footer>
